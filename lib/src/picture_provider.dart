@@ -49,7 +49,7 @@ PictureConfiguration createLocalPictureConfiguration(
   return PictureConfiguration(
     bundle: context != null ? DefaultAssetBundle.of(context) : rootBundle,
     locale:
-        context != null ? Localizations.localeOf(context, nullOk: true) : null,
+        context != null ? Localizations.localeOf(context) : null,
     textDirection: context != null ? Directionality.of(context) : null,
     viewBox: viewBox,
     platform: defaultTargetPlatform,
